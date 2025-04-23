@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ime Prezime">
+    <meta name="description" content="Studentski projekt - Web sjedište za teretanu">
+    <meta name="keywords" content="teretana, fitness, vježbanje, projekt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Centar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #290075;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            background-color: #4a4e63;
+            padding: 1em;
+            color: white;
+        }
+        nav a {
+            display: block;
+            margin-bottom: 0.5em;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            background-color: #778394d8;
+            padding: 1em;
+        }
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+            nav {
+                width: 20%;
+                height: auto;
+            }
+            main {
+                width: 80%;
+            }
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        .galerija {
+    display: flex;
+    gap: 1em;
+    justify-content:flex-start;
+    flex-wrap: wrap; /* da budu jedna ispod druge na malim ekranima */
+        }
+
+        .slika {
+    width: 300px;
+    border: 3px solid #444;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+
+
+
+            
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Centar</h1>
+        <h2>Dobrodošli na našu službenu stranicu</h2>
+    </header>
+
+    <div class="container">
+        <nav>
+            <h3>Navigacija</h3>
+            <a href="#vjezbe">Vježbe</a>
+            <a href="#zadace">Zadaće</a>
+            <a href="https://fsre.sum.ba" target="_blank">FSRE</a>
+        </nav>
+
+        <main>
+            <section>
+                <h3 id="vjezbe">O nama</h3>
+                <p>Naša teretana nudi razne programe vježbanja prilagođene svima, bez obzira na iskustvo.</p>
+            </section>
+            
+            <section>
+                <h4>Galerija</h4>
+                <div class="galerija">
+                <img src="ter.jpg" alt="Slika1 teretane" class="slika">
+                <img src="ter2.jpg" alt="Slika2 teretane" class="slika">
+                <img src="ter3.jpeg" alt="Slika3 teretane" class="slika">
+                
+            </div>
+            </section>
+
+            <section>
+                <h4 id="zadace">Raspored treninga</h4>
+                <table>
+                    <tr>
+                        <th>Dan</th>
+                        <th>Vrijeme</th>
+                        <th>Trening</th>
+                    </tr>
+                    <tr>
+                        <td>Ponedjeljak</td>
+                        <td>18:00</td>
+                        <td>Kružni trening</td>
+                    </tr>
+                    <tr>
+                        <td>Srijeda</td>
+                        <td>19:00</td>
+                        <td>Powerlifting</td>
+                    </tr>
+                    <tr>
+                        <td>Petak</td>
+                        <td>17:00</td>
+                        <td>HIIT</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h4>Kontakt</h4>
+                <p>Autor: Ivan Lasić</p>
+                <p>Email: <a href="mailto:ivan.lasic4@fsre.sum.ba">ivan.lasic4@fsre.sum.ba</a></p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fitness Centar</p>
+    </footer>
+</body>
+</html>
